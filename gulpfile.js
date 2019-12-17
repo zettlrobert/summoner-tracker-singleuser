@@ -3,6 +3,7 @@ const imagemin = require('gulp-imagemin');
 const autoprefixer = require('gulp-autoprefixer');
 const purgecss = require('gulp-purgecss');
 const cleancss = require('gulp-clean-css');
+const minifyJS = require('gulp-minify');
 
 
 gulp.task('test', function () {
@@ -37,3 +38,38 @@ gulp.task('cleancss', () => {
     resolve();
   })
 })
+
+gulp.task('cssdist', () => {
+  return new Promise((resolve, reject) => {
+    console.log('running autoprefixer');
+    gulp.src('src/css/**.css')
+      .pipe(autoprefixer({
+        cascade: false
+      }))
+      .pipe(cleancss({ compatibility: 'ie8' }))
+      .pipe(gulp.dest('public/css'))
+    resolve();
+  })
+})
+
+
+//Minify JS
+gulp.task('minifyjs', () => {
+  return new Promise((resolve, reject) => {
+    console.log('Minimizing Script...')
+    gulp.src('src/js/*.js')
+    pipe.(minifyJS());
+    pipe(gulp.dest('public/js'))
+  })
+})
+
+
+
+// gulp.task('dist', () => {
+//   return new Promise((resolve, reject) => {
+//     console.log('running dist...');
+//     gulpl.src([
+//       'src/*.html',
+//     ])
+//   })
+// })
