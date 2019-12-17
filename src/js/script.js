@@ -94,7 +94,7 @@ let selectRandom = (array) => {
 
   let randomPicture = array[randomNumber];
 
-  let url = `url('../../src/league-official-wallpapers/${randomPicture}')`;
+  let url = `url('league-official-wallpapers/${randomPicture}')`;
 
   // let background = [];
 
@@ -107,7 +107,7 @@ let selectRandom = (array) => {
   // html.style.background = ``;
   // element.style.backgroundImage = url;
 
-  document.body.style.backgroundImage = background;
+  // document.body.style.backgroundImage = background;
 }
 selectRandom(bg);
 
