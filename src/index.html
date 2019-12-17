@@ -4,284 +4,352 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<title>Singleuser Time Tracker</title>
 	</head>
 	<body>
-		<!-- Top -->
-		<div class="card">
-			<h2 class="player-position">
-				<lable class="player-icon"
-					><img src="assets/top.png" alt="Top" />
-				</lable>
-				Top
-			</h2>
+		<div class="cards-wrapper">
+			<!-- Top -->
+			<div class="card">
+				<h2 class="player-position">
+					<lable class="player-icon"
+						><img src="assets/top.png" alt="Top" />
+					</lable>
+					Top
+				</h2>
 
-			<div class="summoners">
-				<ul>
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/flash.png" />
-						</lable>
-						<timer class="spell-timer topFlash">Ready</timer>
-						<button class="pure-material-button-contained topFlashButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetTopFlashButton">
-							Reset
-						</button>
-					</li>
+				<div class="summoners">
+					<ul>
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/flash.png" />
+							</lable>
+							<timer class="spell-timer red topFlash">Ready</timer>
+							<div class="button-wrap">
+								<button class="pure-material-button-contained topFlashButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetTopFlashButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
 
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/tp.png" />
-						</lable>
-						<timer class="spell-timer topTp">Ready</timer>
-						<button class="pure-material-button-contained topTpButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetTopTpButton">
-							Reset
-						</button>
-					</li>
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/tp.png" />
+							</lable>
+							<timer class="spell-timer red topTp">Ready</timer>
+							<div class="button-wrap">
+								<button class="pure-material-button-contained topTpButton">
+									Start
+								</button>
+								<button class="pure-material-button-contained resetTopTpButton">
+									Reset
+								</button>
+							</div>
+						</li>
 
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/ignite.png" />
-						</lable>
-						<timer class="spell-timer topIgnite">Ready</timer>
-						<button class="pure-material-button-contained topIgniteButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetTopIgniteButton">
-							Reset
-						</button>
-					</li>
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/ignite.png" />
+							</lable>
+							<timer class="spell-timer red topIgnite">Ready</timer>
+							<div class="button-wrap">
+								<button class="pure-material-button-contained topIgniteButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetTopIgniteButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
 
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/ghost.png" />
-						</lable>
-						<timer class="spell-timer topGhost">Ready</timer>
-						<button class="pure-material-button-contained topGhostButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetTopGhostButton">
-							Reset
-						</button>
-					</li>
-				</ul>
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/ghost.png" />
+							</lable>
+							<timer class="spell-timer red topGhost">Ready</timer>
+							<div class="button-wrap">
+								<button class="pure-material-button-contained topGhostButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetTopGhostButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Jgl -->
+			<div class="card">
+				<h2 class="player-position">
+					<lable class="player-icon"><img src="assets/jgl.png" alt=""/></lable>
+					JUNGLE
+				</h2>
+
+				<div class="summoners">
+					<ul>
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/flash.png" />
+							</lable>
+							<timer class="spell-timer red jglFlash">Ready</timer>
+							<div class="button-wrap">
+								<button class="pure-material-button-contained jglFlashButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetJglFlashButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/ignite.png" />
+							</lable>
+							<timer class="spell-timer red jglIgnite">Ready</timer>
+							<div class="button-wrap">
+								<button class="pure-material-button-contained jglIgniteButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetJglIgniteButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Mid -->
+			<div class="card">
+				<h2 class="player-position">
+					<lable class="player-icon"><img src="assets/mid.png" alt=""/></lable>
+					Middle
+				</h2>
+
+				<div class="summoners">
+					<ul>
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/flash.png" />
+							</lable>
+							<timer class="spell-timer red midFlash">Ready</timer>
+							<div class="button-wrap">
+								<button class="pure-material-button-contained midFlashButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetMidFlashButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/tp.png" />
+							</lable>
+							<timer class="spell-timer red midTp">Ready</timer>
+							<div class="button-wrap">
+								<button class="pure-material-button-contained midTpButton">
+									Start
+								</button>
+								<button class="pure-material-button-contained resetMidTpButton">
+									Reset
+								</button>
+							</div>
+						</li>
+
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/ignite.png" />
+							</lable>
+							<timer class="spell-timer red midIgnite">Ready</timer>
+							<div class="button-warp">
+								<button class="pure-material-button-contained midIgniteButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetMidIgniteButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- ADC -->
+			<div class="card">
+				<h2 class="player-position">
+					<lable class="player-icon"
+						><img src="assets/bot.png" alt="" />
+					</lable>
+					Bottom
+				</h2>
+
+				<div class="summoners">
+					<ul>
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/flash.png" />
+							</lable>
+							<timer class="spell-timer red adcFlash">Ready</timer>
+							<div class="button-wrapper">
+								<button class="pure-material-button-contained adcFlashButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetAdcFlashButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/heal.png" />
+							</lable>
+							<timer class="spell-timer red adcHeal">Ready</timer>
+							<div class="button-wrapper">
+								<button class="pure-material-button-contained adcHealButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetAdcHealButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/tp.png" />
+							</lable>
+							<timer class="spell-timer red adcTp">Ready</timer>
+							<div class="button-wrapper">
+								<button class="pure-material-button-contained adcTpButton">
+									Start
+								</button>
+								<button class="pure-material-button-contained resetAdcTpButton">
+									Reset
+								</button>
+							</div>
+						</li>
+
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/barrier.png" />
+							</lable>
+							<timer class="spell-timer red adcBarrier">Ready</timer>
+							<div class="button-wrapper">
+								<button class="pure-material-button-contained adcBarrierButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetAdcBarrierButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Support -->
+			<div class="card">
+				<h2 class="player-position">
+					<lable class="player-icon"
+						><img src="assets/support.png" alt="" />
+					</lable>
+					Sup
+				</h2>
+
+				<div class="summoners">
+					<ul>
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/flash.png" />
+							</lable>
+							<timer class="spell-timer red supFlash">Ready</timer>
+							<div class="button-wrapper">
+								<button class="pure-material-button-contained supFlashButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetSupFlashButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/ignite.png" />
+							</lable>
+							<timer class="spell-timer red supIgnite">Ready</timer>
+							<div class="button-wrapper">
+								<button class="pure-material-button-contained supIgniteButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetSupIgniteButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+
+						<li>
+							<lable class="spell-lable">
+								<img class="spell-icon" src="assets/exhaust.png" />
+							</lable>
+							<timer class="spell-timer red supExhaust">Ready</timer>
+							<div class="button-wrapper">
+								<button class="pure-material-button-contained supExhaustButton">
+									Start
+								</button>
+								<button
+									class="pure-material-button-contained resetSupExhaustButton"
+								>
+									Reset
+								</button>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		<!-- Jgl -->
-		<div class="card">
-			<h2 class="player-position">
-				<lable class="player-icon"><img src="assets/jgl.png" alt=""/></lable>
-				JUNGLE
-			</h2>
 
-			<div class="summoners">
-				<ul>
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/flash.png" />
-						</lable>
-						<timer class="spell-timer jglFlash">Ready</timer>
-						<button class="pure-material-button-contained jglFlashButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetJglFlashButton">
-							Reset
-						</button>
-					</li>
-
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/ignite.png" />
-						</lable>
-						<timer class="spell-timer jglIgnite">Ready</timer>
-						<button class="pure-material-button-contained jglIgniteButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetJglIgniteButton">
-							Reset
-						</button>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- Mid -->
-		<div class="card">
-			<h2 class="player-position">
-				<lable class="player-icon"><img src="assets/mid.png" alt=""/></lable>
-				Middle
-			</h2>
-
-			<div class="summoners">
-				<ul>
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/flash.png" />
-						</lable>
-						<timer class="spell-timer midFlash">Ready</timer>
-						<button class="pure-material-button-contained midFlashButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetMidFlashButton">
-							Reset
-						</button>
-					</li>
-
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/tp.png" />
-						</lable>
-						<timer class="spell-timer midTp">Ready</timer>
-						<button class="pure-material-button-contained midTpButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetMidTpButton">
-							Reset
-						</button>
-					</li>
-
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/ignite.png" />
-						</lable>
-						<timer class="spell-timer midIgnite">Ready</timer>
-						<button class="pure-material-button-contained midIgniteButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetMidIgniteButton">
-							Reset
-						</button>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- ADC -->
-		<div class="card">
-			<h2 class="player-position">
-				<lable class="player-icon"><img src="assets/bot.png" alt="" /> </lable>
-				ADC
-			</h2>
-
-			<div class="summoners">
-				<ul>
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/flash.png" />
-						</lable>
-						<timer class="spell-timer adcFlash">Ready</timer>
-						<button class="pure-material-button-contained adcFlashButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetAdcFlashButton">
-							Reset
-						</button>
-					</li>
-
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/heal.png" />
-						</lable>
-						<timer class="spell-timer adcHeal">Ready</timer>
-						<button class="pure-material-button-contained adcHealButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetAdcHealButton">
-							Reset
-						</button>
-					</li>
-
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/tp.png" />
-						</lable>
-						<timer class="spell-timer adcTp">Ready</timer>
-						<button class="pure-material-button-contained adcTpButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetAdcTpButton">
-							Reset
-						</button>
-					</li>
-
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/barrier.png" />
-						</lable>
-						<timer class="spell-timer adcBarrier">Ready</timer>
-						<button class="pure-material-button-contained adcBarrierButton">
-							Start
-						</button>
-						<button
-							class="pure-material-button-contained resetAdcBarrierButton"
-						>
-							Reset
-						</button>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- Support -->
-		<div class="card">
-			<h2 class="player-position">
-				<lable class="player-icon"
-					><img src="assets/support.png" alt="" />
-				</lable>
-				Sup
-			</h2>
-
-			<div class="summoners">
-				<ul>
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/flash.png" />
-						</lable>
-						<timer class="spell-timer supFlash">Ready</timer>
-						<button class="pure-material-button-contained supFlashButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetSupFlashButton">
-							Reset
-						</button>
-					</li>
-
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/ignite.png" />
-						</lable>
-						<timer class="spell-timer supIgnite">Ready</timer>
-						<button class="pure-material-button-contained supIgniteButton">
-							Start
-						</button>
-						<button class="pure-material-button-contained resetSupIgniteButton">
-							Reset
-						</button>
-					</li>
-
-					<li>
-						<lable class="spell-lable">
-							<img class="spell-icon" src="assets/exhaust.png" />
-						</lable>
-						<timer class="spell-timer supExhaust">Ready</timer>
-						<button class="pure-material-button-contained supExhaustButton">
-							Start
-						</button>
-						<button
-							class="pure-material-button-contained resetSupExhaustButton"
-						>
-							Reset
-						</button>
-					</li>
-				</ul>
-			</div>
+		<div class="zerodev">
+			<button class="pure-material-button-contained zerodevButton">
+				zerodev
+			</button>
 		</div>
 
 		<script src="js/script.js"></script>

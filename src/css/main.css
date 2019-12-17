@@ -1,19 +1,25 @@
 html {
 	width: 100%;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
-	/* background-image: url('../league-official-wallpapers/bg-001.jpg'); */
-	background-size: cover;
-	background-repeat: no-repeat;
 	max-width: 100%;
+	padding: 1rem;
 	min-height: 100vh;
-	display: -webkit-box;
+}
+
+.cards-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	-webkit-box-pack: start;
-	justify-content: flex-start;
-	padding: 1rem;
+	justify-content: center;
+}
+
+.zerodev {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15%;
+	text-align: center;
 }
 
 .card {
@@ -42,6 +48,10 @@ body {
 
 .player-icon img {
 	width: 50%;
+}
+
+h2 {
+	color: #c8aa6e;
 }
 
 .summoners {
@@ -86,6 +96,11 @@ body {
 	margin: 0;
 	padding: 1rem;
 	font-size: 1.2rem;
+	font-weight: bolder;
+}
+
+.red {
+	color: red;
 }
 
 .spell-lable {
@@ -212,4 +227,47 @@ body {
 
 .pure-material-button-contained:disabled::after {
 	opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	html {
+		max-width: 600px;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+	}
+
+	.card {
+		margin: 1rem;
+		width: 90%;
+	}
+
+	li {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.spell-lable {
+		display: flex;
+		justify-content: center;
+	}
+
+	.spell-lable {
+		width: 30%;
+	}
+
+	.player-position {
+		margin: 0;
+	}
+
+	.button-wrap {
+		margin: 1rem;
+	}
+
+	.zerodev {
+	}
 }

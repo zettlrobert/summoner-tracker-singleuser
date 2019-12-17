@@ -96,24 +96,24 @@ let selectRandom = (array) => {
 
   let url = `url('league-official-wallpapers/${randomPicture}')`;
 
-  // let background = [];
-
-  // background.push(url);
-
-  // // console.log(background)
-
   return url;
 
-  // html.style.background = ``;
-  // element.style.backgroundImage = url;
-
-  // document.body.style.backgroundImage = background;
 }
 selectRandom(bg);
 
 let randomBackground = selectRandom(bg);
 d.body.style.backgroundImage = randomBackground;
+d.body.style.backgroundSize = 'cover';
+d.body.style.backgroundRepeat = 'no-repeat';
 
+
+
+// Link to my Website
+let zerodev = d.querySelector('.zerodevButton')
+
+zerodev.addEventListener('click', () => {
+  Object.assign(d.createElement('a'), { target: '_blank', href: 'https://zerodev.de/' }).click()
+})
 
 
 // Summoner Timers
@@ -140,16 +140,22 @@ class Spell {
 
     let counter = this.cooldown
 
+    if (this.intervalHandle) {
+      return;
+    }
+
     this.intervalHandle = setInterval(() => {
       counter--
       if (counter >= 0) {
         console.log(counter);
+        this.renderPosition.style.color = '#6aff6a';
         this.renderPosition.innerHTML = `${counter}`
       }
 
       if (counter === 0) {
         console.log('done');
         this.renderPosition.innerHTML = 'Ready'
+        this.renderPosition.style.color = 'red';
       }
     }, 1000)
   }
@@ -157,6 +163,8 @@ class Spell {
   resetTimer() {
     clearInterval(this.intervalHandle);
     this.renderPosition.innerHTML = 'Ready';
+    this.renderPosition.style.color = 'red';
+    this.intervalHandle = null;
   }
 
 }
