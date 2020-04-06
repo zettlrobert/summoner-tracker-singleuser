@@ -1,27 +1,28 @@
 {
-  "name": "summoner-tracker-singleuser",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"name": "summoner-tracker-singleuser",
+	"version": "1.0.0",
+  "private": true, // prevents it from beeing published on npm
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+    "start": "webpack"´
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^6.2.0",
-    "gulp-minify": "^3.1.0",
-    "gulp-purgecss": "^1.2.0",
-    "gulp-uglify": "^3.0.2",
-    "imagemin": "^7.0.1",
-    "install": "^0.13.0",
-    "readable-stream": "^3.4.0"
-  }
+	"author": "zettlrobert",
+	"license": "ISC",
+	"dependencies": {
+		"normalize.css": "^8.0.1"
+	},
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-imagemin": "^6.2.0",
+		"gulp-minify": "^3.1.0",
+		"gulp-purgecss": "^1.2.0",
+		"gulp-uglify": "^3.0.2",
+		"imagemin": "^7.0.1",
+		"install": "^0.13.0",
+		"readable-stream": "^3.4.0"
+	}
 }
